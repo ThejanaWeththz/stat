@@ -1,0 +1,27 @@
+{
+  "name": "@thejanaweththz/stat",
+  "version": "1.0.0",
+  "description": "Keep track of your stats in an instance ✨",
+  "type": "module",
+  "bin": {
+    "stat": "./bin/stat.mjs"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node bin/stat.mjs"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.6.12",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.4.7",
+    "node-fetch": "^3.3.2",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.4.0"
+  }
+}
