@@ -1,8 +1,14 @@
 {
   "name": "@thejanaweththz/stat",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Keep track of your stats in an instance ✨",
+  "license": "MIT",
   "type": "module",
+  "author": {
+    "name": "Thejana Weththasinghe",
+    "email": "thejanaweththz@gmail.com",
+    "url": "https://thejana.dev"
+  },
   "bin": {
     "stat": "./bin/stat.mjs"
   },
@@ -11,6 +17,17 @@
     "dev": "tsup --watch",
     "start": "node bin/stat.mjs"
   },
+  "files": [
+    "dist",
+    "bin",
+    "README.md"
+  ],
+  "keywords": [
+    "stat",
+    "git",
+    "conventional",
+    "cli"
+  ],
   "dependencies": {
     "@types/node-fetch": "^2.6.12",
     "chalk": "^5.3.0",

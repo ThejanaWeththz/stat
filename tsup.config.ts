@@ -3,5 +3,6 @@ import { defineConfig } from "tsup";
 export default defineConfig({
   dts: true,
   format: "esm",
-  entry: ["src/index.ts", "src/fetchGitStats.ts"],
+  entry: ["src/index.ts"],
+  splitting: false,
 });
