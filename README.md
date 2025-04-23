@@ -21,7 +21,7 @@ After installation, you can run `stat` from any terminal.
 
 ## Prerequisites
 
-Before using stat, you must configure your [GitHub Person Access Token](https://github.com/settings/tokens). Run the following command to set it up:
+Before using stat, you must configure your [GitHub Personal Access Token](https://github.com/settings/tokens). Run the following command to set it up:
 
 ```bash
 stat config key # or simply stat config key YOUR_API_KEY
