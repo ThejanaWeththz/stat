@@ -1,6 +1,6 @@
 {
   "name": "@thejanaweththz/stat",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Keep track of your stats in an instance ✨",
   "license": "MIT",
   "type": "module",
@@ -9,6 +9,14 @@
     "email": "thejanaweththz@gmail.com",
     "url": "https://thejana.dev"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thejanaweththz/stat.git",
+    "directory": "packages/cli"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
     "stat": "./bin/stat.mjs"
   },
@@ -37,7 +45,7 @@
     "ora": "^8.2.0"
   },
   "devDependencies": {
-    "ts-node": "^10.9.1",
+    "@types/node": "^22.14.1",
     "tsup": "^8.4.0",
     "typescript": "^5.4.0"
   }
