@@ -1,5 +1,6 @@
 import fetch from "node-fetch";
 import dotenv from "dotenv";
+import { StorageManager } from "@/utils/storage";
 
 dotenv.config();
 
@@ -61,7 +62,7 @@ function calculateStreak(allDays: { date: string; contributionCount: number }[])
   return { currentStreak, longestStreak };
 }
 
-async function fetchGitStats(username: string) {
+async function fetchGitStats(username: string, token: string) {
   const now = new Date();
   const currentYear = now.getFullYear();
   const to = now.toISOString();
@@ -78,7 +79,7 @@ async function fetchGitStats(username: string) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+      Authorization: `Bearer ${token}`,
     },
     body: JSON.stringify({ query: userQuery, variables: { username } }),
   });
@@ -108,7 +109,7 @@ async function fetchGitStats(username: string) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify({ query, variables: { username } }),
     });
