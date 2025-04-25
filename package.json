@@ -36,7 +36,6 @@
     "cli"
   ],
   "dependencies": {
-    "@types/node-fetch": "^2.6.12",
     "chalk": "^5.3.0",
     "commander": "^11.1.0",
     "dotenv": "^16.4.7",
@@ -45,6 +44,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.14.1",
+    "@types/node-fetch": "^2.6.12",
     "tsup": "^8.4.0",
     "typescript": "^5.4.0"
   }
