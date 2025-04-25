@@ -29,11 +29,17 @@ stat config key # or simply stat config key YOUR_API_KEY
 
 ## Usage
 
-Track you git statistics:
+Track your git statistics:
 
 ```bash
 stat # stat USERNAME
 ```
+
+## Contributing
+
+Contributions and suggestions are always welcome! If you have ideas or improvements, feel free to reach out or open a pull request.
+
+Thank you for using `stat`!✨
 
 ## License
 
