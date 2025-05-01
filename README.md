@@ -21,7 +21,17 @@ After installation, you can run `stat` from any terminal.
 
 ## Prerequisites
 
-Before using stat, you must configure your [GitHub Personal Access Token](https://github.com/settings/tokens)(classic) with a read:user scope. Run the following command to set it up:
+Before using stat, you must configure your [GitHub Personal Access Token](https://github.com/settings/tokens)
+
+The GitHub token should have the following scopes:
+
+- `repo` (for private repos, optional)
+- `read:user`
+- `read:org` (if analyzing organization repos)
+
+Both classic and fine-grained tokens are supported.
+
+Run the following command to set it up:
 
 ```bash
 stat config key # or simply stat config key YOUR_API_KEY
