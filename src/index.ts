@@ -23,6 +23,10 @@ async function handleConfigCommand(args: string[]) {
     console.error("❌ Invalid command!");
     return;
   }
+  if (!/^ghp_[\w]{36,}$/.test(token) && !/^github_pat_[\w]{36,}$/.test(token)) {
+    console.error("❌ Invalid token format. Make sure it's a GitHub Personal Access Token.");
+    return;
+  }
 
   await StorageManager.update((store) => ({
     ...store,
